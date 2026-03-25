@@ -23,7 +23,7 @@ h2{
 }
 
 #menu {
-    background: url(images/icon_menu.png) no-repeat center center;
+    background: url(../images/icon_menu.png) no-repeat center center;
     width: 50px;
     height: 66px;
     display: inline-block;
@@ -64,7 +64,7 @@ nav h1 {
 }
 
 #imagem {
-    background: url(images/foto-brecho.webp) no-repeat top center;
+    background: url(../images/foto-brecho.webp) no-repeat top center;
     background-color: black;
     width: 100%;
     height: 500px;
@@ -94,7 +94,7 @@ nav h1 {
 }
 
 section {
-    display: flex;
+    display: flex; 
     align-items: center;
 }
 
@@ -107,21 +107,21 @@ section#produtos {
 }
 
 div#camisetas {
-    background: url(images/camiseta.webp) no-repeat top center;
+    background: url(../images/camiseta.webp) no-repeat top center;
     background-size: cover;
     width: 450px;
     height: 550px;
 }
 
 div#meias {
-    background: url(images/meia.webp) no-repeat top center;
+    background: url(../images/meia.webp) no-repeat top center;
     background-size: cover;
     width: 450px;
     height: 550px;
 }
 
 div#bermudas {
-    background: url(images/bermuda.webp) no-repeat top center;
+    background: url(../images/bermuda.webp) no-repeat top center;
     background-size: cover;
     width: 450px;
     height: 550px;

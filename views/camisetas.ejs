@@ -4,49 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brechó Virtual da Dona Maria - Camisetas</title>
-    <link rel="icon" href="icon.png">
-    <link rel="stylesheet" href="produtos.css">
-    <link rel="stylesheet" href="camisetas.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/camisetas.css">
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon">
 </head>
 <body>
+    <nav>
+        <h1><span id="menu"></span> Brechó Virtual Dona Maria</h1>
+        <menu>
+        </menu>
+    </nav>
+    <h1>Camisetas</h1>
     <main>
-        <nav>
-            <h1><span id="menu"></span> Brechó Virtual Dona Maria</h1>
-            <menu>
-            </menu>
-        </nav>
-        <h1>Camisetas</h1>
         <section id="camisetas">
+            <% camisetas.forEach(camiseta => { %>
             <div class="card-camiseta">
-                <img src="../public/images/camiseta1.jpg" alt="Camiseta FUMA">
+                <img src="/images/<%= camiseta.imagem %>" alt="Camiseta <%= camiseta.marca %>">
                 <p>
-                    <%= camisetas.marca %>
+                    <%= camiseta.marca %>
                     <br>
-                    Camiseta <%= camisetas.marca %> - Casual
+                    Camiseta <%= camiseta.marca %> - Casual
                     <br>
-                    <%= camisetas.preco %>
+                    R$ <%= camiseta.preco.toFixed(2) %>
+                    <br>
+                    ou em 10x de R$ <%= (camiseta.preco / 10).toFixed(2) %>
                 </p>
             </div>
-            <div class="card-camiseta">
-                <img src="../public/images/camiseta2.jpg" alt="Camiseta BEBIDAS">
-                <p>
-                    <%= camisetas.marca %>
-                    <br>
-                    Camiseta <%= camisetas.marca %> - Casual
-                    <br>
-                    <%= camisetas.preco %>
-                </p>
-            </div>
-            <div class="card-camiseta">
-                <img src="../public/images/camiseta3.jpg" alt="Camiseta LACTOSE">
-                <p>
-                    <%= camisetas.marca %>
-                    <br>
-                    Camiseta <%= camisetas.marca %> - Casual
-                    <br>
-                    <%= camisetas.preco %>
-                </p>
-            </div>
+            <% }); %>
         </section>
     </main>
 </body>
