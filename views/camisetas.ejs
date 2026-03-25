@@ -5,10 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brechó Virtual da Dona Maria - Camisetas</title>
     <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="camisetas.css">
 </head>
 <body>
-    <h1>Camisetas</h1>
-    <p>Valor: <%= camisetas.preco %></p>
-    <p><%= camisetas.nome%></p>
+    <main>
+        <nav>
+            <h1><span id="menu"></span> Brechó Virtual Dona Maria</h1>
+            <menu>
+            </menu>
+        </nav>
+        <h1>Camisetas</h1>
+        <section id="camisetas">
+            <div class="card-camiseta">
+                <img src="../public/images/camiseta1.jpg" alt="Camiseta FUMA">
+                <p>
+                    <%= camisetas.marca %>
+                    <br>
+                    Camiseta <%= camisetas.marca %> - Casual
+                    <br>
+                    <%= camisetas.preco %>
+                </p>
+            </div>
+            <div class="card-camiseta">
+                <img src="../public/images/camiseta2.jpg" alt="Camiseta BEBIDAS">
+                <p>
+                    <%= camisetas.marca %>
+                    <br>
+                    Camiseta <%= camisetas.marca %> - Casual
+                    <br>
+                    <%= camisetas.preco %>
+                </p>
+            </div>
+            <div class="card-camiseta">
+                <img src="../public/images/camiseta3.jpg" alt="Camiseta LACTOSE">
+                <p>
+                    <%= camisetas.marca %>
+                    <br>
+                    Camiseta <%= camisetas.marca %> - Casual
+                    <br>
+                    <%= camisetas.preco %>
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

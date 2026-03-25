@@ -64,7 +64,7 @@ nav h1 {
 }
 
 #imagem {
-    background: url(images/foto-brecho.jpg) no-repeat bottom center;
+    background: url(images/foto-brecho.webp) no-repeat top center;
     background-color: black;
     width: 100%;
     height: 500px;
@@ -108,26 +108,26 @@ section#produtos {
 
 div#camisetas {
     background: url(images/camiseta.webp) no-repeat top center;
-}
-
-div#meias {
-    background: url(images/meia.webp) no-repeat top center;
-
-}
-
-div#bermudas {
-    background: url(images/bermuda.webp) no-repeat top center;
-
-}
-
-div#camisetas, div#meias, div#bermudas {
     background-size: cover;
     width: 450px;
     height: 550px;
 }
 
+div#meias {
+    background: url(images/meia.webp) no-repeat top center;
+    background-size: cover;
+    width: 450px;
+    height: 550px;
+}
 
-#camisetas p, #meias p, #bermudas p {
+div#bermudas {
+    background: url(images/bermuda.webp) no-repeat top center;
+    background-size: cover;
+    width: 450px;
+    height: 550px;
+}
+
+.card-prod p {
     text-align: left;
     color: orangered;
     font-size: 1.5em;
@@ -135,7 +135,7 @@ div#camisetas, div#meias, div#bermudas {
     padding: 10px;
 }
 
-#camisetas button, #meias button, #bermudas button {
+.card-prod button {
     background-color: orangered;
     border: none;
     padding: 15px;
@@ -143,11 +143,11 @@ div#camisetas, div#meias, div#bermudas {
     border-radius: 10px;
 }
 
-#camisetas button:hover, #meias button:hover, #bermudas button:hover {
+.card-prod button:hover {
     background-color: rgb(51, 51, 51);
 }
 
-#camisetas button a, #meias button a, #bermudas button a {
+.card-prod button a {
     color: white;
     font-family: 'Josefin Sans', cursive;
     text-decoration: none;
