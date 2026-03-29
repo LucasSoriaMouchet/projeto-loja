@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brechó Virtual da Dona Maria - Bermudas</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/bermudas.css">
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <h1><span id="menu"></span> Brechó Virtual Dona Maria</h1>
+        <menu>
+        </menu>
+    </nav>
+    <h1>Camisetas</h1>
+    <main>
+        <section id="bermudas">
+            <% bermudas.forEach(bermuda => { %>
+            <div class="card-bermuda">
+                <img src="/images/<%= bermuda.imagem %>" alt="Bermuda <%= bermuda.marca %>">
+                <p>
+                    <%= bermuda.marca %>
+                    <br>
+                    Bermuda <%= bermuda.marca %> - Casual
+                    <br>
+                    R$ <%= bermuda.preco.toFixed(2) %>
+                    <br>
+                    ou em 10x de R$ <%= (bermuda.preco / 10).toFixed(2) %>
+                </p>
+            </div>
+            <% }); %>
+        </section>
+    </main>
+</body>
+</html>

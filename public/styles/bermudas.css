@@ -15,31 +15,13 @@ section {
     justify-content: space-between;
 }
 
-.card-camiseta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card-camiseta p{
+.card-bermuda p{
     color: black;
     text-align: left;
-    margin: 20px 0px 10px 60px;
+    margin: 20px;
 }
 
 img {
     width: 400px;
     height: 400px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    background-color: orangered;
-    padding: 10px 20px;
-    width: 80%;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 20px;
-    font-family: 'Bebas Neue', cursive;
 }
