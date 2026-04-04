@@ -43,5 +43,16 @@ app.get('/bermudas', (req, res) => {
 
 app.get('/camisetas/:id', (req, res) => {
     const URL_id = parseInt(req.params.id);
-    
+    const camisetas = [
+        { id: 1, marca: "BEBIDAS", preco: 49.90, imagem: "camiseta1.jpg" },
+        { id: 2, marca: "FUMA", preco: 59.90, imagem: "camiseta2.jpg" },
+        { id: 3, marca: "LACTOSE", preco: 69.90, imagem: "camiseta3.webp" }
+    ]
+    if (URL_id === 1) {
+        res.render("produtos", { camiseta: camisetas[0] })
+    } else if (URL_id === 2) {
+        res.render("produtos", { camiseta: camisetas[1] })
+    } else if (URL_id === 3) {
+        res.render("produtos", { camiseta: camisetas[2] })
+    }
 })
