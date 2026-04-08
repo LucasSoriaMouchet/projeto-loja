@@ -135,21 +135,19 @@ div#bermudas {
     padding: 10px;
 }
 
-.card-prod button {
+.card-prod a {
+    display: inline-block;
     background-color: orangered;
     border: none;
     padding: 15px;
     margin: 90% 0px 0px 10px;
     border-radius: 10px;
-}
-
-.card-prod button:hover {
-    background-color: rgb(51, 51, 51);
-}
-
-.card-prod button a {
     color: white;
     font-family: 'Josefin Sans', cursive;
     text-decoration: none;
     font-size: 1.2em;
+}
+
+.card-prod a:hover {
+    background-color: rgb(51, 51, 51);
 }

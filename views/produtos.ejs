@@ -25,10 +25,13 @@
             </p>
             <form action="/carrinho" method="post">
                 <div id="tamanhos">
-                    <input type="hidden" name="produtoId" value="<%= camiseta.id %>">
-                    <input type="hidden" name="nome" value="<%= camiseta.marca %>">
-                    
-                    <input type="radio" name="tamanho" id="tamanho-p" value="P" required checked>
+                    <input type="hidden" name="id" value="<%= camiseta.id %>">
+                    <input type="hidden" name="marca" value="<%= camiseta.marca %>">
+                    <input type="hidden" name="preco" value="<%= camiseta.preco %>">
+                    <input type="hidden" name="imagem" value="<%= camiseta.imagem %>">
+                    <input type="hidden" name="tamanho" value="<%= camiseta.tamanho %>">
+
+                    <input type="radio" name="tamanho" id="tamanho-p" value="P" checked>
                     <label for="tamanho-p">P</label>
                     <input type="radio" name="tamanho" id="tamanho-m" value="M">
                     <label for="tamanho-m">M</label>

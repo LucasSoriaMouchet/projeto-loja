@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brechó Virtual da Dona Maria - Carrinho</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/carrinho.css">
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <h1><span id="menu"></span> Brechó Virtual Dona Maria</h1>
+        <menu>
+        </menu>
+    </nav>
+    <div id="background-carrinho">
+        <span></span>
+        <h1>Seu Carrinho</h1>
+    </div>
+    <main>
+        <table>
+            <thead>
+                <tr>
+        <!--ID-->   <th>#</th>
+                    <th>Marca</th>
+                    <th>Preço</th>
+                    <th>Tamanho</th>
+                    <th>Produto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% carrinho.forEach(item => { %>
+                    <tr>
+                        <td><%= item.id %></td>
+                        <td><%= item.marca %></td>
+                        <td>R$ <%= item.preco %></td>
+                        <td><%= item.tamanho %></td>
+                        <td id="img-prod"><%= item.imagem %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+        <button>Finalizar Compra</button>
+    </main>
+</body>
+</html>
